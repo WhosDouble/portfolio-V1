@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+#scroll-start {
+  font-family: Caveat, sans-serif;
+}
+#sometimes-good {
+  font-family: Caveat, sans-serif;
+}
+#loop {
+  animation: loop-scroll 50s linear infinite;
+}
+#projetcs {
+  font-family: Caveat, sans-serif;
+}
+#contactMe {
+  font-family: Caveat, sans-serif;
+}
+#class1 {
+  background-color: #481e14;
+}
+#about-me {
+  font-family: Caveat, sans-serif;
+}
+#tech-stack {
+  font-family: Caveat, sans-serif;
+}
+@keyframes loop-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
