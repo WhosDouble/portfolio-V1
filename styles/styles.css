@@ -16,7 +16,6 @@
 #projetcs {
   font-family: Caveat, sans-serif;
   background-color: #088395;
-  z-index: 99;
 }
 #contactMe {
   font-family: Caveat, sans-serif;
@@ -25,10 +24,11 @@
   background-color: #481e14;
 }
 #span-1 {
-  color: #37b7c3;
+  background: linear-gradient(30deg, #77e4c8, #36c2ce, #478ccf, #4535c1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #about-me {
-  font-family: Caveat, sans-serif;
   background-color: #37b7c3;
 }
 #tech-stack {
@@ -36,7 +36,7 @@
 }
 
 #change-one {
-  background-color: #071952;
+  background-color: #000;
   color: #ebf4f6;
 }
 
