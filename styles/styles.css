@@ -10,6 +10,8 @@
 }
 #projetcs {
   font-family: Caveat, sans-serif;
+  background-color: #088395;
+  z-index: 99;
 }
 #contactMe {
   font-family: Caveat, sans-serif;
@@ -19,10 +21,21 @@
 }
 #about-me {
   font-family: Caveat, sans-serif;
+  background-color: #37b7c3;
 }
 #tech-stack {
   font-family: Caveat, sans-serif;
 }
+
+#change-one {
+  background-color: #071952;
+  color: #ebf4f6;
+}
+
+#change-two {
+  color: #ebf4f6;
+}
+
 @keyframes loop-scroll {
   from {
     transform: translateX(0);
