@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SirRangos portfolio</title>
+    <title>SirRango</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,27 +13,30 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <div>
       <nav
-        class="flex fixed w-full h-9 items-center z-20 gap-8 justify-center text-orange-800 bg-black"
+        class="flex justify-center items-center fixed w-full h-9 z-20 gap-8 text-orange-800 bg-black"
       >
         <a href="#">Me!</a>
         <a href="#projetcs">Projects</a>
+        <a href="#aboutMe">About Me</a>
         <a href="#contactMe">Contact Me!</a>
       </nav>
       <div
         class="flex flex-col justify-center relative items-center h-screen w-full bg-black"
       >
-        <h1 class="text-orange-950 text-4xl">
+        <h1 class="text-orange-950 sm:mb-10 sm text-4xl">
           Hello! I'm
-          <span class="text-5xl">SirRango</span>👋
+          <span class="text-5xl sm:mb-10">SirRango</span>👋
         </h1>
-        <p class="text-gray-400 pl-44 pr-40">
-          A <span class="text-orange-700">Software Engineer</span> with a
-          passion for creating responsive, engaging, entertaining and amazing
-          user experiences
-        </p>
+        <div class="flex text-center justify-center">
+          <p class="text-gray-400 sm:p-20 sm:mt-10">
+            A <span class="text-orange-700">Software Engineer</span> with a
+            passion for creating responsive, engaging, entertaining and amazing
+            user experiences
+          </p>
+        </div>
         <p
           id="scroll-start"
           class="text-gray-400 group relative cursor-pointer text-xl pt-20"
@@ -55,7 +58,7 @@
         </p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
+          viewBox="0 -69 1440 320"
           class="absolute block bottom-0"
         >
           <path
@@ -73,7 +76,7 @@
         <p class="text-center text-3xl text-black font-bold">(my projects!)</p>
         <div class="flex gap-7 justify-center cursor-pointer flex-wrap">
           <div
-            class="h-72 w-1/4 bg-black rounded hover:scale-105 transition-transform group relative"
+            class="h-72 min-w-1/4 max-w-3/4 bg-black rounded hover:scale-105 transition-transform group relative"
           >
             <img
               class="object-cover w-full h-full rounded"
@@ -122,9 +125,9 @@
             </a>
           </div>
         </div>
-        <div class="flex justify-center gap-10">
+        <div class="flex justify-center flex-wrap gap-10">
           <div
-            class="h-72 w-96 bg-black hover:scale-105 transition-transform rounded group relative"
+            class="h-72 w-96 sm:p-10 bg-black hover:scale-105 transition-transform rounded group relative"
           >
             <img
               class="object-cover w-full h-full rounded"
@@ -147,11 +150,11 @@
             </a>
           </div>
           <div
-            class="h-72 w-1/4 bg-black hover:scale-105 transition-transform rounded group relative"
+            class="h-72 min-w-1/4 max-w-3/4 bg-black rounded hover:scale-105 transition-transform group relative"
           >
             <img
               class="object-cover w-full h-full rounded"
-              src="assets/img/underconstruction.png"
+              src="assets/videos/new featuresv2.gif"
               alt=""
             />
             <a href="https://unrivaled-cat-9182f4.netlify.app" target="_blank">
@@ -161,7 +164,10 @@
                 Live Demo
               </button>
             </a>
-            <a href="https://unrivaled-cat-9182f4.netlify.app" target="_blank">
+            <a
+              href="https://github.com/WhosDouble/product-landing-page/tree/main?tab=readme-ov-file"
+              target="_blank"
+            >
               <button
                 class="absolute bottom-6 left-6 opacity-0 transition-opacity group-hover:opacity-100 bg-black text-orange-800 p-3 z-10"
               >
@@ -185,9 +191,9 @@
           id="aboutMe"
           class="flex flex-col justify-center relative pt-24 gap-10 bg-orange-950"
         >
-          <h2 class="text-center text-5xl" id="about-me">(About Me)</h2>
-          <div class="m-auto w-1/4">
-            <p class="text-center text-gray-400">
+          <h2 class="text-center text-5xl">(About Me)</h2>
+          <div class="m-auto sm:w-3/4 p-10 lg:w-1/4 xl:w-1/4">
+            <p class="text-center text-gray-400 text-2xl" id="aboutMe">
               I've been diving into programming for a few months now, and my
               passion lies in building and learning
               <span id="sometimes-good" class="text-black"
@@ -197,8 +203,8 @@
               possibilities.
             </p>
           </div>
-          <div class="m-auto w-1/4 relative">
-            <p class="text-center text-gray-400">
+          <div class="m-auto sm:w-3/4 lg:w-1/4 p-10 xl:w-1/4 relative">
+            <p class="text-center text-gray-400 text-2xl">
               other hobbies include gaming🎮 fitness💪 and my cat🐱 🔧 I enjoy
               working with technologies like JavaScript, React.js, and svelte 🌟
               I love creating and learning new things through coding.
@@ -208,23 +214,17 @@
             (My Tech Stack)
           </h2>
           <div
-            class="flex flex-wrap relative justify-center overflow-hidden space-x-56 pb-28 animate-loop-scroll"
+            class="flex space-x-40 relative justify-center overflow-hidden animate-loop-scroll"
           >
-            <img class="flex w-20" src="https://skillicons.dev/icons?i=react" />
+            <img class="w-20" src="https://skillicons.dev/icons?i=react" />
+            <img class="w-20" src="https://skillicons.dev/icons?i=svelte" />
             <img
-              class="flex w-20"
-              src="https://skillicons.dev/icons?i=svelte"
-            />
-            <img
-              class="flex w-20"
+              class="w-20"
               src="https://skillicons.dev/icons?i=tailwindcss"
             />
-            <img class="flex w-20" src="https://skillicons.dev/icons?i=html" />
-            <img class="flex w-20" src="https://skillicons.dev/icons?i=css" />
-            <img
-              class="flex w-20"
-              src="https://skillicons.dev/icons?i=javascript"
-            />
+            <img class="w-20" src="https://skillicons.dev/icons?i=html" />
+            <img class="w-20" src="https://skillicons.dev/icons?i=css" />
+            <img class="w-20" src="https://skillicons.dev/icons?i=javascript" />
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
@@ -236,13 +236,15 @@
         </div>
       </div>
 
-      <div class="flex justify-center pt-24 pb-28 gap-10 bg-orange-600">
+      <div
+        class="flex flex-wrap justify-center items-center pt-24 pb-28 gap-10 bg-orange-600"
+      >
         <div>
-          <h1 class="mb-5 text-gray-300 text-2xl" id="contactMe">
+          <h1 class="p-5 text-gray-300 text-2xl" id="contactMe">
             (Contact me!)
           </h1>
-          <div class="w-96 pr-16">
-            <p class="font-bold">
+          <div class="w-96 gap-5">
+            <p class="font-bold text-xl">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
               neque, earum dolor minima repellendus incidunt itaque
               necessitatibus, dolorum, odio ducimus esse voluptatibus laboriosam
@@ -272,7 +274,9 @@
       <div
         class="flex justify-center items-center cursor-default h-20 gap-10 bg-black"
       >
-        <h2 class="text-white">Devoloped and Designed by @SirRango!</h2>
+        <h2 class="text-white">
+          Devoloped and Designed by <a href="" target="_blank">@SirRango!</a>
+        </h2>
       </div>
     </div>
   </body>
