@@ -8,6 +8,11 @@
 #loop {
   animation: loop-scroll 50s linear infinite;
 }
+#myName {
+  background: linear-gradient(85deg, #77e4c8, #36c2ce, #478ccf, #4535c1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 #projetcs {
   font-family: Caveat, sans-serif;
   background-color: #088395;
@@ -18,6 +23,9 @@
 }
 #class1 {
   background-color: #481e14;
+}
+#span-1 {
+  color: #37b7c3;
 }
 #about-me {
   font-family: Caveat, sans-serif;
