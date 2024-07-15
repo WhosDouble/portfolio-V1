@@ -28,8 +28,19 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#span-2 {
+  background: linear-gradient(15deg, #000, #074173, #1679ab);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 #about-me {
-  background-color: #37b7c3;
+  font-family: Caveat, sans-serif;
+}
+#aboutMe {
+  font-family: Poppins, sans-serif;
+}
+#aboutMe2 {
+  font-family: Poppins, sans-serif;
 }
 #tech-stack {
   font-family: Caveat, sans-serif;
@@ -42,6 +53,21 @@
 
 #change-two {
   color: #ebf4f6;
+}
+.stairs {
+  background: #37b7c3;
+}
+#aboutmetwo {
+  font-family: Poppins, sans-serif;
+}
+::-webkit-scrollbar {
+  width: 0.5em;
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #37b7c3;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 @keyframes loop-scroll {
